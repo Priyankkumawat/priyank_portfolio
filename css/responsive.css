@@ -53,6 +53,17 @@
         line-height: 24px;
     }
 
+    .banner_wrapper{
+        width: 100%;
+        height: auto;
+        min-height: 550px;
+        background-image: url('../images/bg_m.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 200px 0 100px 0;
+    }
+
     .about_wrapper ul li{
         font-size: 14px;
     }
