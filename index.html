@@ -1,356 +1,607 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Priyank Kumawat, priyank kumawat netlify, priyankkumawat, priyank, priyank kumawat coder, priyank kumawat programmer, priyank kumawat silvassa, priyank kumawat Ahmedabad, priyank kumawat C++">
-    <meta name="og:priyank kumawat" property="og:priyank kumawat" content="Priyank kumawat">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Priyank Kumawat — Software Engineer, System Architect & AI/ML Builder. Member of Technical Staff at GE HealthCare. Building scalable systems, cloud architecture, and RAG/LLM-powered applications.">
+  <meta name="author" content="Priyank Kumawat">
 
-    <!-- fevicon -->
-    <link rel="icon" type="image/png" href="./images/lg.png">
+  <meta property="og:title" content="Priyank Kumawat — Software Engineer · Architect · AI/ML">
+  <meta property="og:description" content="Building scalable systems, cloud architecture, and AI-powered applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/portrat_priyank.jpeg">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="./images/lg.png">
 
-    <!-- custom css  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- febcode link  -->
-    <script src="https://kit.fontawesome.com/31cd93e3dc.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Priyank Kumawat</title>
-  </head>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.16.0/devicon.min.css">
 
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
 
+  <title>Priyank Kumawat — Software Engineer · Architect · AI/ML</title>
+</head>
 
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
-    
-    <!-- navbar  -->
-    <header class="header_wrapper">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo1.png" class="img-fluid" alt="logo">
+<body>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress"><span id="scrollProgressBar"></span></div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- fixed side rails (desktop only) -->
+  <aside class="side-rail side-rail--left" aria-label="Social links">
+    <ul>
+      <li><a href="https://github.com/priyankkumawat" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/priyank-kumawat-30419920b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://leetcode.com/priyankkumawat7223/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a></li>
+      <li><a href="https://www.instagram.com/_galactus__3000_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+    <span class="side-rail__line"></span>
+  </aside>
+
+  <aside class="side-rail side-rail--right" aria-label="Email">
+    <a href="mailto:priyankkumawat7223@gmail.com">priyankkumawat7223@gmail.com</a>
+    <span class="side-rail__line"></span>
+  </aside>
+
+  <!-- navbar -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <a class="brand" href="#home">
+        <span class="brand__mark">PK</span>
+        <span class="brand__name">Priyank<em>.</em></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active"><span>00.</span>Home</a></li>
+          <li><a href="#about" class="nav-link"><span>01.</span>About</a></li>
+          <li><a href="#experience" class="nav-link"><span>02.</span>Experience</a></li>
+          <li><a href="#skills" class="nav-link"><span>03.</span>Skills</a></li>
+          <li><a href="#projects" class="nav-link"><span>04.</span>Projects</a></li>
+          <li><a href="#achievements" class="nav-link"><span>05.</span>Achievements</a></li>
+          <li><a href="#contact" class="nav-link"><span>06.</span>Contact</a></li>
+        </ul>
+        <a href="Resume/KUMAWAT_PRIYANK_RESUME.pdf" download class="btn btn--ghost nav-cv">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="heroCanvas" class="hero__canvas"></canvas>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__dot"></span> Hi, I'm
+        </p>
+        <h1 class="hero__name reveal">Priyank Kumawat</h1>
+        <h2 class="hero__role reveal">
+          <span class="type-target" id="typeTarget"></span><span class="type-cursor">&nbsp;</span>
+        </h2>
+        <p class="hero__lede reveal">
+          I design scalable systems, build cloud-native applications on AWS, and ship AI-powered
+          tools using LLMs &amp; RAG — currently as a <strong>Software Engineer Specialist</strong> at
+          <strong>GE HealthCare</strong>.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          <a href="Resume/KUMAWAT_PRIYANK_RESUME.pdf" download class="btn btn--text">
+            <i class="fa-solid fa-arrow-down"></i> Resume
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav menu-navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#achivement">Achivements</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              
-            </ul>
+        </div>
+
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <span class="stat__num" data-count="2">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Years Industry Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="400">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">LeetCode Problems Solved</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="2">0</span><span class="stat__suffix"></span>
+            <span class="stat__label">Companies &amp; Counting</span>
           </div>
         </div>
-      </nav> 
-    </header>
-    
-    <!-- Banner section  -->
-    <section id="home" class="banner_wrapper">
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center text-md-start">
-            <h6>Welcome </h6>
-            <h1>I'm Priyank <br> Kumawat <br><span>Coder</span><br>from home</h1>
-            <div class="mt-4">
-              <a href="Resume/KUMAWAT_PRIYANK_RESUME.pdf" download="" class="main-btn">Download CV</a>
+        <h3 class="section-tag reveal"><span>01.</span> About Me</h3>
+        <h2 class="section-title reveal">Behind the code</h2>
+
+        <div class="about__grid">
+          <div class="about__photo reveal">
+            <div class="photo-frame">
+              <img src="images/portrat_priyank.jpeg" alt="Portrait of Priyank Kumawat" loading="lazy">
+            </div>
+            <span class="badge-float"><i class="fa-solid fa-circle-check"></i> Open to interesting problems</span>
+          </div>
+
+          <div class="about__content reveal">
+            <p>
+              I'm a software engineer who likes turning ambiguous problems into clean,
+              well-architected systems — and lately, into AI-powered ones. I started out
+              obsessing over data structures, algorithms, and competitive programming, and that
+              same love for solving hard problems now shows up in how I design backend systems,
+              cloud infrastructure, and LLM-driven tools.
+            </p>
+            <p>
+              Today I work as a <strong>Software Engineer Specialist</strong>
+              <strong> at GE HealthCare</strong>, after starting my career
+              at <strong>CCTech</strong>. In between shipping production software, I've been
+              deepening my skills in <strong>low-level design, AWS, and applied AI</strong> —
+              exploring Retrieval-Augmented Generation (RAG) and the Model Context Protocol (MCP)
+              to connect LLMs with real tools and data.
+            </p>
+
+            <ul class="quick-facts">
+              <li><i class="fa-solid fa-location-dot"></i> Based in Gujarat, India</li>
+              <li><i class="fa-solid fa-briefcase"></i> Software Engineer Specialist · GE HealthCare</li>
+              <li><i class="fa-solid fa-layer-group"></i> Focus: Backend Systems · Cloud · AI/RAG</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> B.Tech, Electrical Engineering</li>
+            </ul>
+
+            <div class="tabs">
+              <div class="tabs__nav" role="tablist">
+                <button class="tab-btn active" data-tab="education" role="tab" aria-selected="true">Education</button>
+                <button class="tab-btn" data-tab="certs" role="tab" aria-selected="false">Certifications</button>
+                <button class="tab-btn" data-tab="hobbies" role="tab" aria-selected="false">Hobbies</button>
+              </div>
+
+              <div class="tabs__panel active" data-panel="education" role="tabpanel">
+                <div class="tab-item">
+                  <div class="tab-item__head">
+                    <h4>B.Tech, Electrical Engineering</h4>
+                    <span class="tab-item__date">2019 — 2023</span>
+                  </div>
+                  <a href="http://ldce.ac.in/" target="_blank" rel="noopener">L.D. College of Engineering, Ahmedabad</a>
+                </div>
+              </div>
+
+              <div class="tabs__panel" data-panel="certs" role="tabpanel">
+                <div class="tab-item">
+                  <div class="tab-item__head">
+                    <h4>Python Programming: A Concise Introduction</h4>
+                    <span class="tab-item__date">Feb 2022</span>
+                  </div>
+                  <p class="tab-item__meta">Coursera · Credential ID: S47F7G7DYMPY</p>
+                </div>
+                <div class="tab-item">
+                  <div class="tab-item__head">
+                    <h4>Algorithmic Toolbox</h4>
+                    <span class="tab-item__date">May 2022</span>
+                  </div>
+                  <p class="tab-item__meta">Coursera · Credential ID: 3DPQMGN3R3MA</p>
+                </div>
+              </div>
+
+              <div class="tabs__panel" data-panel="hobbies" role="tabpanel">
+                <div class="chip-row">
+                  <span class="chip">Chess</span>
+                  <span class="chip">Photography</span>
+                  <span class="chip">Sketching</span>
+                  <span class="chip">Travelling</span>
+                  <span class="chip">Meditation</span>
+                  <span class="chip">Anime</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- about  -->
-    <section class="about_wrapper" id="about">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <img src="images/about.jpeg" class="img-fluid rounded-3" alt="about me">
-          </div>
-          <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
-            <div class="my-3 my-lg-0">
-              <!-- <span class="subtitle"></span> -->
-              <h2>About Me</h2>
-              <p>I am Priyank Kumawat an upcoming software developer.
-                 </p>
-            </div>
-            <div class="pt-4">
-              <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">My Skills</button>
-                </li>
-                
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-intern-tab" data-bs-toggle="pill" data-bs-target="#pills-intern" type="button" role="tab" aria-controls="pills-intern" aria-selected="false">Internships</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-hobbies-tab" data-bs-toggle="pill" data-bs-target="#pills-hobbies" type="button" role="tab" aria-controls="pills-hobbies" aria-selected="false">Hobbies</button>
-                </li>
+        <h3 class="section-tag reveal"><span>02.</span> Where I've Worked</h3>
+        <h2 class="section-title reveal">Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline__line"><span class="timeline__line-fill" id="timelineFill"></span></div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot timeline__dot--current"></div>
+            <div class="timeline__card">
+              <span class="tag tag--current">Current</span>
+              <div class="timeline__card-head">
+                <h4>Software Engineer Specialist <span>· Member of Technical Staff</span></h4>
+                <span class="timeline__date">2024 — Present</span>
+              </div>
+              <p class="timeline__org">GE HealthCare</p>
+              <ul>
+                <li>Contributing as a Member of Technical Staff to the design, development, and delivery of production healthcare software.</li>
+                <li>Applying Low-Level Design (LLD) and object-oriented principles to build scalable, maintainable backend components.</li>
+                <li>Exploring and integrating AI/ML capabilities — LLMs, Retrieval-Augmented Generation (RAG), and MCP-based tooling — into engineering workflows.</li>
+                <li>Working with AWS cloud services to support deployment, scalability, and monitoring.</li>
               </ul>
-              <div class="tab-content" id="pills-tabContent">
+            </div>
+          </div>
 
-                <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab" tabindex="0">
-                  <h6>C++</h6>
-                  <div class="progress">                   
-                    <div class="progress-bar " role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-                  </div>                  
-                  <!-- <span class="label">90%</span> -->
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-head">
+                <h4>Software Engineer</h4>
+                <span class="timeline__date">2023 — 2024</span>
+              </div>
+              <p class="timeline__org">CCTech</p>
+              <ul>
+                <li>Developed and maintained software solutions across the full development lifecycle, from design to deployment.</li>
+                <li>Collaborated with cross-functional teams to deliver product features for clients.</li>
+                <li>Built a strong foundation in object-oriented design, clean code, and scalable software architecture.</li>
+                <li>Gained hands-on experience with cloud deployment and modern engineering tooling.</li>
+              </ul>
+            </div>
+          </div>
 
-                  <h6>Python</h6>
-                  <div class="progress">
-                    <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                  </div>
-                  
-                  <h6>Data structure</h6>
-                  <div class="progress">
-                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                  </div>
-                  
-                  <h6>Algorithm</h6>
-                  <div class="progress">
-                    <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                  </div>
-                  
-                </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-head">
+                <h4>Data Science, ML &amp; DSA Scholar Intern</h4>
+                <span class="timeline__date">Nov 2021 — Jun 2022</span>
+              </div>
+              <p class="timeline__org">Twowaits Technologies Pvt. Ltd</p>
+              <ul>
+                <li>Strengthened core data structures &amp; algorithms problem-solving skills.</li>
+                <li>Explored foundational data science and machine learning concepts and tooling.</li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="tab-pane fade" id="pills-intern" role="tabpanel" aria-labelledby="pills-intern-tab" tabindex="0">
-                  <ul class="list-unstyled text-start ps-0">
-                    <li>
-                      <a href="http://tathastu.twowaits.in/">Tathastu Data Science & Machine Learning Scholar Intern</a>
-                      <p>At Twowaits Technologies Pvt. Ltd from 1st June - 30th June</p>
-                    </li>
-                    <li>
-                      <a href="http://tathastu.t">
-                        Tathastu Dsa Scholar Intern
-                      </a>
-                      <p>At Twowaits Technologies Pvt. Ltd from 1st Nov - 30th Nov</p>
-                    </li>
-                  </ul>                 
-                </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-head">
+                <h4>B.Tech, Electrical Engineering</h4>
+                <span class="timeline__date">2019 — 2023</span>
+              </div>
+              <p class="timeline__org">L.D. College of Engineering, Ahmedabad</p>
+              <ul>
+                <li>Built a foundation in engineering fundamentals and mathematics, alongside a growing focus on programming and computer science.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
-                  <ul class="list-unstyled text-start ps-0">
-                    <li>
-                      <a href="https://www.bing.com/maps?q=govt+higher+secondary+school+silvassa&FORM=HDRSC6">SSC - Govt. Higher Secondary School Silvassa</a> <p>2016-2017</p>
-                    </li>
-                    <li>
-                      <a href="https://www.bing.com/maps?q=govt+higher+secondary+school+silvassa&FORM=HDRSC6">HSC - Govt. Higher Secondary School Silvassa</a><p>2018-2019</p>
-                    </li>
-                    <li>
-                      <a href="http://ldce.ac.in/">
-                        BE - L.D. College of Engineering Ahmedabad
-                      </a><p>2019-Current</p>
-                    </li>
-                  </ul>
-                </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h3 class="section-tag reveal"><span>03.</span> What I Work With</h3>
+        <h2 class="section-title reveal">Skills &amp; Technologies</h2>
 
-                <div class="tab-pane fade" id="pills-hobbies" role="tabpanel" aria-labelledby="pills-hobbies-tab" tabindex="0">
-                  <ul class="list-unstyled text-start ps-0">
-                    <li>
-                      Meditation
-                    </li>
-                    <li>Photography</li>
-                    <li>Chess</li>
-                    <li>Traveling</li>
-                    <li>Listening to music and watching Anime</li>
-                  </ul>
-                </div>
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><i class="fa-solid fa-code"></i><h4>Languages &amp; Fundamentals</h4></div>
+            <div class="chip-row">
+              <span class="chip"><i class="devicon-cplusplus-plain colored"></i>C++</span>
+              <span class="chip"><i class="devicon-python-plain colored"></i>Python</span>
+              <span class="chip"><i class="devicon-java-plain colored"></i>Java</span>
+              <span class="chip"><i class="devicon-javascript-plain colored"></i>JavaScript</span>
+              <span class="chip"><i class="devicon-mysql-plain colored"></i>SQL</span>
+              <span class="chip"><i class="fa-solid fa-diagram-project"></i>DSA</span>
+              <span class="chip"><i class="fa-solid fa-cubes"></i>OOP</span>
+            </div>
+          </div>
 
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><i class="fa-solid fa-sitemap"></i><h4>System Design &amp; Architecture</h4></div>
+            <div class="chip-row">
+              <span class="chip"><i class="fa-solid fa-draw-polygon"></i>Low-Level Design</span>
+              <span class="chip"><i class="fa-solid fa-building-shield"></i>High-Level Design</span>
+              <span class="chip"><i class="fa-solid fa-shapes"></i>Design Patterns</span>
+              <span class="chip"><i class="fa-solid fa-circle-nodes"></i>Microservices</span>
+              <span class="chip"><i class="fa-solid fa-plug"></i>REST APIs</span>
+              <span class="chip"><i class="devicon-django-plain colored"></i>Django</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><i class="fa-solid fa-cloud"></i><h4>Cloud &amp; DevOps</h4></div>
+            <div class="chip-row">
+              <span class="chip"><i class="devicon-amazonwebservices-plain colored"></i>AWS EC2</span>
+              <span class="chip"><i class="devicon-amazonwebservices-plain colored"></i>S3</span>
+              <span class="chip"><i class="devicon-amazonwebservices-plain colored"></i>Lambda</span>
+              <span class="chip"><i class="fa-solid fa-user-shield"></i>IAM</span>
+              <span class="chip"><i class="devicon-docker-plain colored"></i>Docker</span>
+              <span class="chip"><i class="devicon-git-plain colored"></i>Git</span>
+              <span class="chip"><i class="devicon-github-original colored"></i>GitHub</span>
+              <span class="chip"><i class="fa-solid fa-code-branch"></i>CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-card skill-card--highlight reveal">
+            <div class="skill-card__head"><i class="fa-solid fa-robot"></i><h4>AI/ML &amp; Generative AI</h4></div>
+            <div class="chip-row">
+              <span class="chip"><i class="fa-solid fa-brain"></i>Machine Learning</span>
+              <span class="chip"><i class="fa-solid fa-wand-magic-sparkles"></i>LLMs</span>
+              <span class="chip"><i class="fa-solid fa-magnifying-glass-chart"></i>RAG</span>
+              <span class="chip"><i class="fa-solid fa-server"></i>MCP Servers</span>
+              <span class="chip"><i class="fa-solid fa-link"></i>LangChain</span>
+              <span class="chip"><i class="fa-solid fa-comment-dots"></i>Prompt Engineering</span>
+              <span class="chip"><i class="fa-solid fa-database"></i>Vector DBs</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__head"><i class="fa-solid fa-laptop-code"></i><h4>Web &amp; Tools</h4></div>
+            <div class="chip-row">
+              <span class="chip"><i class="devicon-html5-plain colored"></i>HTML5</span>
+              <span class="chip"><i class="devicon-css3-plain colored"></i>CSS3</span>
+              <span class="chip"><i class="devicon-bootstrap-plain colored"></i>Bootstrap</span>
+              <span class="chip"><i class="devicon-postman-plain colored"></i>Postman</span>
+              <span class="chip"><i class="devicon-linux-plain colored"></i>Linux</span>
+              <span class="chip"><i class="devicon-vscode-plain colored"></i>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h3 class="section-tag reveal"><span>04.</span> Things I've Built</h3>
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-sub reveal">
+          A mix of personal/exploratory builds in AI and cloud, alongside academic projects from
+          earlier in my journey.
+        </p>
+
+        <div class="projects__grid">
+          <article class="project-card project-card--concept tilt reveal">
+            <div class="project-card__media project-card__media--concept">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <div class="project-card__body">
+              <span class="tag tag--personal">Personal Project</span>
+              <h4>RAG-Powered Knowledge Assistant</h4>
+              <p>An experimental Retrieval-Augmented Generation pipeline that chunks and embeds
+                documents into a vector store, then uses an LLM to answer questions grounded in
+                that content — exploring chunking strategies, embedding models, and prompt design.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">LangChain</span>
+                <span class="chip">Vector DB</span><span class="chip">LLMs</span>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </article>
 
-    <!-- project  -->
-    <section class="project_wraper" id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center mb-4">
-            <span class="subtitle">Look on my projects</span>
-            <h2>My Projects</h2>
-            <p>These all the projects that i have made in different fields like web development, C++, JavaFx, and Java Swing</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12  mb-4">
-            <div class="card p-0">
-              <span style="background-image:url('./images/p1.png') ;"></span>
-            </div>          
-          </div>
-
-          <div class="col-12  mb-4">            
-            <div class="card p-0">
-              <span style="background-image:url('./images/p2.webp') ;"></span>
-            </div>            
-          </div>
-
-          <div class="col-12  mb-4">            
-            <div class="card p-0">
-              <span style="background-image:url('./images/p3.webp') ;"></span>
-            </div>            
-          </div>
-
-          <div class="col-12  mb-4">            
-            <div class="card p-0">
-              <span style="background-image:url('./images/p4.webp') ;"></span>
-            </div>            
-          </div>
-          
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achivements -->
-    <section class="achive_wraper" id="achivement">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center mb-4">
-            <span class="subtitle">Look on my achivement</span>
-            <h2>My Achivements</h2>
-            <p>These are the things that i have achive in my life which is precious to me</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">Hackathon-2022</h2>
-              <p class="lead">We are the runner up in top 24 in internal hackathon</p>
+          <article class="project-card project-card--concept tilt reveal">
+            <div class="project-card__media project-card__media--concept">
+              <i class="fa-solid fa-server"></i>
             </div>
-            <div class="col-md-5">
-              <img src="./images/hack1.jpeg" role="img" width="300" height="500" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">
-              LeetCode
-            </h2>
-            <p class="lead">I have solve 250+ questions on leetcode </p>
-            <a href="https://leetcode.com/priyankkumawat7223/">Leetcode</a>
-          </div>
-          <div class="col-md-5 order-md-1">  
-            <img src="./images/250_leetcode.png" role="img" width="300" height="500" class="img-fluid" alt=""> 
-          </div>
-        </div>
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              LeetCode
-            </h2>
-            <p class="lead">I have 4 badges on leetcode </p>
-            <a href="https://leetcode.com/priyankkumawat7223/">Leetcode</a>
-          </div>
-          <div class="col-md-5 order-md-1">  
-            <img src="./images/4_badge.png" role="img" width="300" height="500" class="img-fluid" alt=""> 
-          </div>
-        </div>
-
-      </div>
-      </div>
-    </section>
-
-    <section class="contact_wraper" id="contact">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
-            <h2>Contact Me</h2>
-            <div class="row call_details mb-4">
-              <label class="col-sm-3">Call me directly</label>
-              <div class="col-sm-9 mb-3 mb-lg-2">
-                +97 7434919861
-              </div>
-              <label class="col-sm-3">Contact Email: </label>
-              <div class="col-sm-9 mb-3 mb-lg-2">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqXcRtTBchJVFlVSrGvnMbsvSrjCSXBqFRKmZqCNzJbpbxWGVXkXrPdBqxCSxfSjkQrXr">priyankkumawat7223@gmail.com</a>
+            <div class="project-card__body">
+              <span class="tag tag--personal">Personal Project</span>
+              <h4>MCP Server for Dev Tooling</h4>
+              <p>An experimental Model Context Protocol (MCP) server exposing custom tools to
+                LLM-based coding assistants — exploring how AI agents can safely interact with
+                external systems through a standardized tool-calling protocol.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">MCP</span>
+                <span class="chip">JSON-RPC</span><span class="chip">Tool Calling</span>
               </div>
             </div>
-            <form action="post" data-netlify="true">
-              <div class="mb-4">
-                <input type="text" class="form-control" name="name" placeholder="Your Name..." autocomplete="off">
+          </article>
+
+          <article class="project-card project-card--concept tilt reveal">
+            <div class="project-card__media project-card__media--concept">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
             </div>
-            <div class="mb-4">
-                <input type="number" class="form-control" name="number" placeholder="Your Phone..." autocomplete="off">
+            <div class="project-card__body">
+              <span class="tag tag--personal">Personal Project</span>
+              <h4>Cloud-Native App on AWS</h4>
+              <p>Designing and deploying a small scalable application on AWS — EC2 for compute,
+                S3 for storage, Lambda for event-driven logic — with IAM least-privilege access
+                and CloudWatch monitoring.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">AWS EC2</span><span class="chip">S3</span>
+                <span class="chip">Lambda</span><span class="chip">IAM</span>
+              </div>
             </div>
-            <div class="mb-4">
-                <input type="email" class="form-control" name="email" placeholder="Your Email..." autocomplete="off">
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-card__media" style="background-image:url('./images/p1.png')"></div>
+            <div class="project-card__body">
+              <span class="tag tag--academic">Academic Project</span>
+              <h4>E-Commerce Desktop Application</h4>
+              <p>A JavaFX desktop e-commerce application backed by a SQL database, with SHA-256
+                password hashing, a shopping cart, order history, and a product rating system.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Java</span><span class="chip">JavaFX</span>
+                <span class="chip">SQL</span><span class="chip">OOP</span>
+              </div>
             </div>
-            <div class="mb-4">
-                <input cols="40" rows="4" class="form-control" name="message" id="message"
-                    placeholder="Write a Message..." autocomplete="off">
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-card__media" style="background-image:url('./images/p2.webp')"></div>
+            <div class="project-card__body">
+              <span class="tag tag--academic">Academic Project</span>
+              <h4>Online Banking System</h4>
+              <p>An object-oriented banking system simulation in C++ supporting account creation,
+                login, deposits, withdrawals, and transaction history, backed by a persistent
+                file-based store.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">C++</span><span class="chip">OOP</span><span class="chip">File I/O</span>
+              </div>
             </div>
-            <div class="field">
-              <div data-netlify-recaptcha="true"></div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-card__media" style="background-image:url('./images/p3.webp')"></div>
+            <div class="project-card__body">
+              <span class="tag tag--academic">Academic Project</span>
+              <h4>Library Management System</h4>
+              <p>A full-stack library management web app built with Django — cataloging books,
+                search, issue/return workflows, and an admin dashboard backed by a relational
+                database.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Python</span><span class="chip">Django</span>
+                <span class="chip">SQL</span><span class="chip">Bootstrap</span>
+              </div>
             </div>
-            <button type="submit" class="main-btn">Submit</button>
-            </form>
-          </div>
-          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
-            <img src="./images/portrat_priyank.jpeg" class="img-fluid"  alt="">
-          </div>
+          </article>
+
+          <article class="project-card tilt reveal">
+            <div class="project-card__media" style="background-image:url('./images/p4.webp')"></div>
+            <div class="project-card__body">
+              <span class="tag tag--academic">Academic Project</span>
+              <h4>Brick &amp; Ball Arcade Game</h4>
+              <p>A classic brick-breaker arcade game built with Java Swing, featuring real-time
+                collision detection, scoring, and responsive paddle controls.</p>
+              <div class="chip-row chip-row--sm">
+                <span class="chip">Java</span><span class="chip">Swing</span><span class="chip">OOP</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <!-- Priyank Kumawat -->
-    <section class="footer_wraper" id="contact">
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section achievements">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-6 text-center text-md-start">
-            <div class="footer-logo mb-3 mb-md-0">
-              <img src="images/logo1.png" alt="">
-            </div>
+        <h3 class="section-tag reveal"><span>05.</span> Proof of Work</h3>
+        <h2 class="section-title reveal">Achievements</h2>
+
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <i class="fa-solid fa-code stat-card__icon"></i>
+            <span class="stat-card__num" data-count="400">0</span><span class="stat__suffix">+</span>
+            <p>Problems solved on <a href="https://leetcode.com/priyankkumawat7223/" target="_blank" rel="noopener">LeetCode</a></p>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center jus social-icon mb-3 mb-md-0">
+          <div class="stat-card reveal">
+            <i class="fa-solid fa-medal stat-card__icon"></i>
+            <span class="stat-card__num" data-count="7">0</span>
+            <p>Badges earned on LeetCode</p>
+          </div>
+          <div class="stat-card reveal">
+            <i class="fa-solid fa-trophy stat-card__icon"></i>
+            <span class="stat-card__num" data-count="24">0</span>
+            <p>Runner-up, Top team at internal Hackathon, LDCE</p>
+          </div>
+          <div class="stat-card reveal">
+            <i class="fa-solid fa-building stat-card__icon"></i>
+            <span class="stat-card__num" data-count="2">0</span><span class="stat__suffix">+</span>
+            <p>Years of professional engineering experience</p>
+          </div>
+        </div>
+
+        <div class="achievements__gallery">
+          <figure class="reveal">
+            <img src="images/hack1.jpeg" alt="Hackathon team" loading="lazy">
+            <figcaption>Internal Hackathon — Top 24 Team</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="images/250_leetcode.png" alt="LeetCode 400+ problems solved" loading="lazy">
+            <figcaption>400+ LeetCode Problems</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="images/4_badge.png" alt="LeetCode 7 badges" loading="lazy">
+            <figcaption>7 LeetCode Badges</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3 class="section-tag reveal"><span>06.</span> Get In Touch</h3>
+        <h2 class="section-title reveal">Let's build something</h2>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__lede">
+              Have an interesting problem, an opportunity, or just want to talk about system
+              design and AI? My inbox is open.
+            </p>
+            <ul class="contact__details">
               <li>
-                <a href="https://www.instagram.com/_galactus__3000_/"><i class="fab fa-instagram"></i></a>
-
-                <a href="https://www.facebook.com/priyank.kumawat.39"><i class="fa-brands fa-facebook-square"></i></a>
-
-                <a href="https://www.linkedin.com/in/priyank-kumawat-30419920b/"><i class="fa-brands fa-linkedin"></i></a>
-
-                <a href="https://www.youtube.com/channel/UCdA7nt90mwsp3xftDxijD9Q"><i class="fa-brands fa-youtube-square"></i></a>
-
-                <a href="https://github.com/priyankkumawat"><i class="fa-brands fa-github-square"></i></a>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+917434919861">+91 74349 19861</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:priyankkumawat7223@gmail.com">priyankkumawat7223@gmail.com</a>
               </li>
             </ul>
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <div class="copy text-lg-start text-center mb-3 mb-lg-0">
-              <p class="mb-0">Copyright © 2022 <a href="">Pacoders</a>.All Rights Reserved.</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/_galactus__3000_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/priyank.kumawat.39" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/priyank-kumawat-30419920b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCdA7nt90mwsp3xftDxijD9Q" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://github.com/priyankkumawat" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
           </div>
+
+          <form class="contact__form reveal" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="form-row">
+              <input type="text" class="form-control" name="name" placeholder="Your Name" autocomplete="off" required>
+            </div>
+            <div class="form-row">
+              <input type="tel" class="form-control" name="number" placeholder="Your Phone" autocomplete="off">
+            </div>
+            <div class="form-row">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" autocomplete="off" required>
+            </div>
+            <div class="form-row">
+              <textarea class="form-control" name="message" rows="4" placeholder="Write a Message..." autocomplete="off" required></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a href="#home" class="brand">
+        <span class="brand__mark">PK</span>
+        <span class="brand__name">Priyank<em>.</em></span>
+      </a>
+      <p>Designed &amp; built by Priyank Kumawat · &copy; <span id="year"></span></p>
+    </div>
+  </footer>
 
-    <!-- custom js  -->
-    <script src="js/main.js"></script>
-  </body>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- custom js -->
+  <script src="js/main.js"></script>
+</body>
 </html>
